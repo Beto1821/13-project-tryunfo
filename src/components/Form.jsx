@@ -28,7 +28,7 @@ class Form extends Component {
           <InputTexto
             data="name-input"
             type="text"
-            name="Name"
+            name="cardName"
             value={ cardName }
             onChange={ onInputChange }
           />
@@ -36,7 +36,7 @@ class Form extends Component {
         <div>
           <TextArea
             data="description-input"
-            name="Descricao"
+            name="cardDescription"
             value={ cardDescription }
             onChange={ onInputChange }
           />
@@ -45,7 +45,7 @@ class Form extends Component {
           <InputTexto
             data="attr1-input"
             type="number"
-            name="Attr1"
+            name="cardAttr1"
             value={ cardAttr1 }
             onChange={ onInputChange }
           />
@@ -54,7 +54,7 @@ class Form extends Component {
           <InputTexto
             data="attr2-input"
             type="number"
-            name="Attr2"
+            name="cardAttr2"
             value={ cardAttr2 }
             onChange={ onInputChange }
           />
@@ -63,7 +63,7 @@ class Form extends Component {
           <InputTexto
             data="attr3-input"
             type="number"
-            name="Attr3"
+            name="cardAttr3"
             value={ cardAttr3 }
             onChange={ onInputChange }
           />
@@ -72,7 +72,7 @@ class Form extends Component {
           <InputTexto
             data="image-input"
             type="text"
-            name="Imagem"
+            name="cardImage"
             value={ cardImage }
             onChange={ onInputChange }
           />
@@ -81,7 +81,7 @@ class Form extends Component {
           <Select
             data="rare-input"
             type="select"
-            name="Select"
+            name="cardRare"
             value={ cardRare }
             onChange={ onInputChange }
           />
