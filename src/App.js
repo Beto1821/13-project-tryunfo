@@ -14,11 +14,23 @@ class App extends React.Component {
     cardTrunfo: false,
     hasTrunfo: false,
     isSaveButtonDisabled: true,
+    cards: [],
   };
 
   onSaveButtonClick = () => {
+    const { cardTrunfo: hasTrunfo } = this.state;
     this.setState(
-      () => ({
+      ({
+        cardName,
+        cardDescription,
+        cardRare,
+        cardImage,
+        cardAttr1,
+        cardAttr2,
+        cardAttr3,
+        cardTrunfo,
+        cards,
+      }) => ({
         cardName: '',
         cardDescription: '',
         cardAttr1: '0',
@@ -26,8 +38,24 @@ class App extends React.Component {
         cardAttr3: '0',
         cardImage: '',
         cardRare: '',
+        cards: [
+          ...cards,
+          {
+            cardName,
+            cardDescription,
+            cardRare,
+            cardImage,
+            cardAttr1,
+            cardAttr2,
+            cardAttr3,
+            cardTrunfo,
+          },
+        ],
       }),
     );
+    if (!hasTrunfo) {
+      this.setState({ cardTrunfo: false });
+    }
   };
 
   onInputChange = ({ target }) => {
