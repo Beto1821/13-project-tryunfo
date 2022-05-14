@@ -6,7 +6,7 @@ class InputTexto extends Component {
     const { data, type, name, value, onChange } = this.props;
     return (
       <label htmlFor={ name }>
-        {name}
+        { name }
         <input
           data-testid={ data }
           type={ type }

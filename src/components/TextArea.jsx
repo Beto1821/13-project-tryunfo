@@ -6,7 +6,7 @@ class TextArea extends Component {
     const { data, name, value, onChange } = this.props;
     return (
       <label htmlFor={ name }>
-        {name}
+        Descrição
         <textarea
           data-testid={ data }
           name={ name }

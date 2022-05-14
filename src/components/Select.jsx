@@ -7,10 +7,10 @@ class Select extends Component {
     return (
       <label htmlFor={ name }>
         {name}
-        <select data-testid={ data } value={ value } onChange={ onChange }>
-          <option name={ name }>normal</option>
-          <option name={ name }>raro</option>
-          <option name={ name }>muito raro</option>
+        <select data-testid={ data } name={ name } value={ value } onChange={ onChange }>
+          <option value="normal">normal</option>
+          <option value="raro">raro</option>
+          <option value="muito raro">muito raro</option>
         </select>
       </label>
     );

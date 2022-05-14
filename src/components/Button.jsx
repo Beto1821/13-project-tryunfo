@@ -8,7 +8,6 @@ class Button extends Component {
       <button
         type="submit"
         data-testid={ data }
-        name={ name }
         disabled={ disabled }
         onClick={ onClick }
       >
