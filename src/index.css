@@ -1,13 +1,77 @@
-body {
+*{
+  background-color: rgb(40, 46, 77);
+  background-position: center;  
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  display: flex;
+  
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+.pai{
+  display: flex;
+ color: cornsilk;
+ font-size: large;
+ animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+ justify-content: space-between;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgb(40, 40, 77);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 10px 20px rgb(61, 70, 110);
+  margin-bottom: 40px;
+  margin-left: 10px;
+  padding-right: 200px;
+}
+.inputs{
+  margin: 0px 40px 25px 10px;
+  color: aliceblue;
+}
+
+ button{
+  background-color: rgb(16, 104, 180);
+  border: none;
+  padding: 10px 50px;
+}
+
+.inputsAtt{
+  margin: 0px 0px 5px 10px;
+}
+.inputsimg{
+  margin: 25px 0px 5px 10px;
+
+}
+h1{
+  margin-left: 10px;
+}
+
+input, textarea, select {
+  color: aliceblue;
+}
+
+.card{
+  justify-content:center;
+  border: 4px solid rgb(81, 42, 99);
+  border-radius: 5px;
+  margin-left: 100px;
+  padding-right: 80px;
+  padding-left: 40px;
+}
+img{
+  width: 350px;
 }

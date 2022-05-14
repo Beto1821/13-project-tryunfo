@@ -24,7 +24,7 @@ class Form extends Component {
     } = this.props;
     return (
       <form>
-        <div>
+        <div className="inputs">
           <InputTexto
             data="name-input"
             type="text"
@@ -33,7 +33,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <TextArea
             data="description-input"
             name="cardDescription"
@@ -41,7 +41,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <InputTexto
             data="attr1-input"
             type="number"
@@ -50,7 +50,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <InputTexto
             data="attr2-input"
             type="number"
@@ -59,7 +59,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <InputTexto
             data="attr3-input"
             type="number"
@@ -68,7 +68,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <InputTexto
             data="image-input"
             type="text"
@@ -77,7 +77,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <Select
             data="rare-input"
             type="select"
@@ -86,7 +86,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <CheckBox
             data="trunfo-input"
             name="cardTrunfo"
@@ -95,7 +95,7 @@ class Form extends Component {
             onChange={ onInputChange }
           />
         </div>
-        <div>
+        <div className="inputs">
           <Button
             data="save-button"
             name="Salvar"
