@@ -20,11 +20,10 @@ code {
 }
 
 .pai{
-  display: flex;
+ display: flex;
  color: cornsilk;
  font-size: large;
  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
- justify-content: space-between;
 }
 
 .forms{
@@ -74,4 +73,8 @@ input, textarea, select {
 }
 img{
   width: 350px;
+}
+.deck {
+  width: 200px;
+  border: 2px solid red;
 }
