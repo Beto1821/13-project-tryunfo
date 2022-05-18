@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
+import Delete from './components/Delete';
 
 class App extends React.Component {
   state = {
@@ -113,12 +114,7 @@ class App extends React.Component {
     this.setState(() => ({
       hasTrunfo: false,
     }));
-    // this.setState(({ cards }) => {
-    //   if (cards.every((card) => !card.cardTrunfo)) {
-    //     return { hasTrunfo: false };
-    //   }
-    // });
-  }
+  };
 
   render() {
     const {
@@ -175,16 +171,10 @@ class App extends React.Component {
                 cardTrunfo={ card.cardTrunfo }
                 hasTrunfo={ card.hasTrunfo }
               />
-              <button
-                className="buttonCard"
-                name={ card.cardName }
-                type="button"
-                data-testid="delete-button"
+              <Delete
+                cardName={ card.cardName }
                 onClick={ () => this.onDelete(card.cardName) }
-              >
-                Excluir
-
-              </button>
+              />
             </div>
           ))}
         </div>
